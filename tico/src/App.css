@@ -1,0 +1,448 @@
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.App {
+  /* display: flex;
+  flex-direction: column;*/
+  width: 100%;
+  
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  /* max-width: 1200px; */
+  padding: 0 15px;
+}
+
+
+.AppHeader {
+ 
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgba(253, 234, 65, 0.767); */
+  /* column-gap: 10px; */
+  align-items: center;
+  padding-right: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  display: flex;
+  height: 70px;
+  /* margin: auto; */
+  float: left;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-family: sans-serif;
+ 
+  text-transform: uppercase;
+  
+}
+
+.header-menu {
+  float: left;
+}
+
+.header-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*  */
+}
+
+.header-menu li {
+  display: inline-flex;
+  margin-right: 40px; /* Add some space between list items */
+  
+}
+
+.header-menu a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  font-weight: bold; /* Make links bold */
+  
+
+}
+
+
+
+.header-menu li a:hover{ 
+  border-bottom: 2px solid #3498db; 
+  color: #3498db;
+}
+
+/* .container-hero {
+  
+  height: 100vh;
+} */
+
+.heroBlock {
+  background: url('assets/image/tico.jpg') no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  height: 100vh;
+}
+
+.heroBlock::before {
+  content: "";
+  background-color: rgb(255, 254, 189); /* Adjust the alpha value (0.5 in this case) for the desired transparency */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Adjust the opacity for your requirement */
+.heroBlock::before {
+  opacity: 0.6; /* This sets the opacity of the background overlay */
+}
+
+.heroBlock .container-fluid {
+  display: block !important;
+  margin-top: 150px;
+}
+
+.heroBlock .ant-carousel,
+.heroBlock .ant-carousel div {
+  height: 100%;
+}
+
+.heroBlock .slick-dots li button {
+  background: #000 !important;
+}
+
+.heroBlock .slick-dots li.slick-active button {
+  background: #0026ff !important;
+}
+
+/* .heroBlock .content{ */
+  /* max-width: 640px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* margin-left: 180px; */
+  /* background-color: #3498db; */
+
+  /* padding: 70px 190px 70px; */
+/* } */
+
+.heroBlock h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 30px;
+}
+
+.heroBlock p {
+  margin: 0 0 30px;
+}
+
+/* .heroBlock .btnHolder {
+  height: auto !important;
+} */
+
+.heroBlock .btnHolder button,
+.heroBlock .btnHolder .fas {
+  margin: 0 20px 0 0;
+}
+
+/* CONTENT */
+
+.content {
+  width: 100%;
+  margin: 30px auto 30px;
+  
+}
+
+.content .main-content {
+  width: 70%;
+  float: left;
+  background-color: #f8f8cc;
+}
+
+.content .main-content .recent-post-title {
+  margin: 20px;
+}
+
+/* .content .main-content.single {
+  background: white;
+   padding: 20px 50px;
+   font-size: 1.1em;
+   border-radius: 5px;
+} */
+
+/* .content .main-content.single .post-title {
+  text-align: center;
+  margin-bottom: 20px;
+} */
+
+.content .main-content .post {
+  width: 95%;
+  height: 270px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+
+}
+
+
+.content .main-content .post .post-preview a {
+  text-decoration: none;
+}
+
+/* .content .popular .post {
+  border-top: 1px solid red;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.content .popular .post img {
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin-right: 10px;
+
+} */
+
+.content .main-content .post .read-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #031cfaaf;
+  background: transparent;
+  border-radius: 5px;
+  color: white !important;
+  padding: 5px;
+  background-color: #031cfaaf;
+}
+
+.content .main-content .post .read-more:hover {
+  /* background: #031cfaaf; */
+  
+  transition: .20s;
+  color: #031cfaaf !important;
+  background-color: white;
+}
+
+.content .main-content .post .post-image {
+  width: 40%;
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* SideBar */
+
+.content .sidebar {
+  width: 30%;
+  float: left;
+ height: auto; 
+ background-color: #f8f8cc;
+}
+
+/* .content .sidebar.single {
+  padding: 0px 10px;
+} */
+
+.content .sidebar .section {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.content .sidebar .section .section-title {
+  margin: 10px 0px 10px 0px;
+}
+
+.content .sidebar .section.search {
+  margin-top: 90px;
+  display: flex;
+  
+}
+
+.content .sidebar .section.search .text-input{
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 9px;
+}
+
+.content .sidebar .section.topics ul {
+  margin: 0px;
+  padding: 10px;
+  list-style: none;
+  border-top: 1px solid rgb(212, 216, 3);
+}
+
+.content .sidebar .section.topics ul li a {
+  border-bottom: 1px solid rgb(212, 210, 210);
+  display: block;
+  padding: 15px 0px  15px 0px ;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.content .sidebar .section.topics ul li a:hover {
+  padding-left: 10px;
+  transition: all 0.2s;
+}
+
+.sponsors h2 {
+  border-bottom: 1px solid rgb(212, 216, 3);
+  text-align: center;
+  margin-top: 40px ;
+  margin-bottom: 70px;
+}
+
+/* Footer section */
+
+.footerWidget .ant-list-split .ant-list-item {
+  border: 0;
+  padding: 10px 0;
+  color: #000000;
+  position: relative;
+
+}
+
+.footerWidget .recentPost .ant-list-item {
+  padding-left: 20px;
+}
+
+.footerWidget .recentPost .ant-list-item:before {
+  content: '\f054';
+  font: var(--fa-font-solid);
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.footerWidget .ant-list-item-meta-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  font-weight: 500;
+}
+
+.footerWidget .ant-avatar {
+  border-radius: 0 !important;
+  width: 70px;
+  height: 70px;
+}
+
+.footerWidget .tags .ant-tag {
+  font-size: 15px;
+  margin: 0 10px 10px 0;
+  padding: 5px 15px;
+  background-color: #031cfaaf;
+  color: white;
+}
+
+.footerWidget .tags .ant-tag a {
+  transition: opacity 0.3s linear;
+  color: white;
+}
+
+.footerWidget .tags .ant-tag a:hover {
+  opacity: 0.5;
+}
+
+.footerWidget .tags .ant-tag-close-icon {
+  font-size: 15px;
+  color: white;
+}
+
+/* footer copyright */
+.footerCopyright {
+  position: relative;
+  padding: 25px 0 0;
+  color: #f8f8cc;
+  text-align: center;
+}
+
+.footerCopyright:before {
+  content: '';
+  background: #000;
+  position: absolute;
+  top: 0;
+  bottom: -25px;
+  left: -999px;
+  right: -999px;
+  
+}
+
+.footerCopyright .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* tabs */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.ant-tabs-tab:hover {
+  color: #3498db;
+}
+
+.ant-tabs-ink-bar {
+  background: #3498db;
+}
+
+/* Contacts */
+.contactInfo {
+  padding: 10px 0;
+}
+
+.footerCopyright .container .contactInfo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footerCopyright .container .contactInfo li {
+  margin: 0 30px 0 0;
+}
+
+.footerCopyright .container .contactInfo li span {
+  margin: 0 5px 0 0;
+}
+
+.footerCopyright .container .contactInfo a {
+  color: #f8f8cc;
+}
+
+.footerCopyright .container .contactInfo a :hover {
+  color: #3498db;
+}
+
+
+
+.socialMedia {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.socialMedia li  {
+  color: #f8f8cc;
+  transition: color 0.3s linear;
+  margin: 0 20px 0 0;
+
+}
+
+.socialMedia li:hover {
+  color: #3498db;
+  
+}
